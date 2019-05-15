@@ -1,0 +1,559 @@
+<!-- by Stanislav Udatsnoi -->
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Form</title>
+  <meta name="description" content="form car leasing">
+  <meta name="author" content="Stanislav">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+  
+
+</head>
+
+
+<body>
+  
+  <div class="wrapper">
+  	<div class="header">
+  		<div class="containerHrd">
+  			<div class="fLine">
+  				<div class="lBoxBg">
+  				<a href="#"><img class="logoSwd" src="img/swedbank-logo-1.gif" alt="logoSWD" /></a><select class="PrBsSclt">
+  						<option value="Private">Private</option>
+  						<option value="Bussiness">Bussiness</option>
+  					</select>
+  				</div>
+  				<div class="rBoxBg">
+  					<a class="enterAcc" href="#"><span></span><p>Enter</p></a>
+  					<select class="langSclt">
+  						<option value="По-русски">RU</option>
+  						<option value="Eesti">ET</option></select>
+  					<a class="icon_letter" href="#"></a>
+  					<a class="icon_mobile" href="#"></a>
+  				</div>
+	  		</div>
+	  		<div class="sLine">
+	  			<hr class="fxsLine" />
+	  			<ul>
+	  				<li><a class="icon_home" href="#"></a></li>
+	  				<li><a class="menLinksLine" href="#">Everyday banking</a></li>
+	  				<!-- <li><a href="#">Payment collection</a></li> -->
+	  				<!-- <li><a href="#">Financing</a></li> -->
+	  				<li><a class="menLinksLine" href="#">Insurance</a></li>
+	  				<li><a class="menLinksLine" href="#"><span>Loan, leasing, credit card</span></a></li>
+	  				<li><a class="menLinksLine" href="#">Investment, saving</a></li>
+	  				<li><a class="menLinksLine" href="#">Pension</a></li>
+	  				<!-- li><a href="#">Deposits, invest­ments, custody</a></li>
+	  				<li><a href="#">Trade­room and financial markets</a></li>
+	  				<li><a href="#">Group and interna­tional services</a></li>
+	  				<li><a href="#">E-Accounting</a></li -->
+	  				<li><a class="menLinksLine" href="#">My bank</a></li>
+	  				<li><a class="icon_search" href="#"></a></li>
+	  			</ul>
+	  		</div>
+	   </div>
+	</div>
+	   <div class="headerUnd">
+	   		<div class="breadcrumbs">
+	   			<p>Home ▸ Loan, leasing, credit card ▸ Car lease and car loan ▸ <strong>Form</strong></p>
+	   		</div>
+	   </div>
+
+
+		<!-- 
+	   	<div class="pageMain"  style="display:none;">
+	   			<div class="pageContainer">
+
+	   				<div class="mainForm">
+	   				 		<form action="#">
+	   				 <h2 class="Hrd2PrsnData">Personal data </h2>
+		   				 <div class="prsnData">
+		   				 	<div class="fBox">
+		   				 		<p class="fName">First name
+		   				 			<span class="reqPrs">*</span>
+		   				 			<span class="tooltipsPrs"></span>
+		   				 		</p>
+							  	<p class="lName">Last name
+							  		<span class="reqPrs">*</span>
+							  		<span class="tooltipsPrs"></span>
+							  	</p>
+							  	<p class="PrsnCode">Personal ID-code
+							  		<span class="reqPrs">*</span>
+							  		<span class="tooltipsPrs"></span>
+							  	</p>
+							  	<p class="EmlAddress">Email
+							  		<span class="reqPrs">*</span>
+							  		<span class="tooltipsPrs"></span>
+							  	</p>
+							  	<p class="TphNumber">Mobile Number
+							  		<span class="reqPrs">*</span>
+							  		<span class="tooltipsPrs"></span>
+							  	</p>
+		   				 	</div>
+							<div class="sBox">
+								<input type="text" name="firstname"/><input type="text" name="lastname"/><input type="text" name="personalcode"/><input type="email" name="emailaddress"/><input type="tel" maxlength="18" name="mobilenumber" value="[EE] +372 "/>
+							</div>
+						</div>
+
+					<h2 class="Hrd2CarLsngData">Car Leasing Data</h2>
+						<div class="carLsngData">
+
+							<div class="fBox">
+								<p class="carMake">Car make:</p>
+		   				 		<p class="carPrc">Car price:</p>
+							  	<p class="dwnpyment">Downpayment:</p>
+							  	<p class="tpLeasing">Type of leasing:</p>
+							  	<p class="priod">Period:</p>
+		   				 	</div>
+							<div class="sBox">
+								<select class="slcCarMake" name="cars" required>
+								  	<option value="Choose make">Make</option>
+								    <option value="tytCar">Toyota</option>
+								    <option value="dtsnCar">Datsun</option>
+								    <option value="lnciaCar">Lancia</option>
+								    <option value="seatCar">Seat</option>
+								  </select>
+								  <input type="text" name="carprice" required /><input type="text" name="downpayment" value="10%" required />
+								  <select class="slcTpLsng" name="typeLeasing" required>
+								  	<option value="Leasing">Type Leasing</option>
+								    <option value="Lease">Financial lease</option>
+								    <option value="LeaseWith">Financial lease with a residual value (only to bussiness clients)</option>
+								    <option value="opertLease">Operational lease</option>
+								  </select>
+								  <select class="periodPay" name="PeriodPay" required>
+								  	<option value="six months">6 months</option>
+								    <option value="twelve months">12 months</option>
+								    <option value="twenty-four months">24 months</option>
+								    <option value="thirty months">30 months</option>
+								    <option value="thirty-six months">36 months</option>
+								    <option value="forty-two months">42 months</option>
+								    <option value="forty-eight months" selected>48 months</option>
+								    <option value="fifty-four months">54 months</option>
+								    <option value="sixty months">60 months</option>
+								    <option value="sixty six months ">66 months</option>
+								    <option value="seventy-two  months">72 months</option>
+								    <option value="seventy-eight months">78 months</option>
+								    <option value="eighty-four months">84 months</option>
+								  </select>
+							</div>
+
+							
+						</div>
+
+						<h2>Car insurance</h2>
+
+							<p class="textboxInsurance">Our Bank offers all-risk insurance to its clients. All-risk insurance covers <strong> damage caused by any sudden unforeseen event </strong>(e.g. a fire, traffic accident, vandalism, natural disaster, theft and robbery) that damages or destroys the insured item. Events listed among the exceptions are not considered to be insured events.</p>
+
+							<div class="radioCrLsData">
+
+									
+									 <label class="container">Your prefer the our offers<input type="radio" name="typeCarLeasing" value="Our offers" checked />
+									 	<span class="checkmark"></span>
+									 </label>
+									 <label class="container">In other insurance company<input type="radio" name="typeCarLeasing" value="Other company offers" />
+									 	<span class="checkmark"></span>
+									 </label>
+									 <label class="container">Other<input type="radio" name="typeCarLeasing" value="Other insurance" />
+									 	<span class="checkmark"></span>
+									 </label>
+									 <textarea style="display: none;"></textarea>
+							</div>
+
+						<h2>Terms and Conditions</h2>	 
+		 			
+			 			<div class="chckBoxCrLsData">
+			 					  <label class="container">Send confirmation email<input type="checkbox" name="confirmInfo" value="Email confirming">
+								  	<span class="checkmark"></span>
+								  </label>
+								  <label class="container">By confirming , I agree to The Bank Terms and Conditions.<input  type="checkbox" name="confirmInfo" value="Terms and Conditions agree">
+								  	<span class="checkmark"></span>
+								  </label>
+								  <label class="container">By clicking the „Send“ button, you confirm that you agree to the use of cookies.<input  type="checkbox" name="confirmInfo" value="Cookies processing">
+								  	<span class="checkmark"></span>
+								  </label>
+						</div>
+
+						<hr class="hrLinesubRes" />
+						<div class="subResBtns">
+						  <input class="submitBtn" type="submit" name="Submit">
+						  <input class="resetBtn" type="reset" name="Reset Data">
+						</div>
+
+					</form> 
+	   				</div>
+	   			</div>
+		</div> -->
+
+
+
+		<!-- Right task is below  -->
+
+
+		<form action="#">
+			<div class="ltr1" id="letterN1">
+				<div class="ltrContainer">
+					<div class="pageContainer">
+	   				<div class="mainForm">
+	   					<div class="container">
+<!-- 
+steps {
+	displya: none;
+}
+
+.activeStep {
+	display: block;
+}
+ -->
+
+
+
+
+						<div class="steps active-step" id="step-1">
+
+
+
+
+							<h2 class="Hrd3PrsnData">Car Leasing Form</h2>
+							<hr>
+							<h3 class="Hrd2PrsnData">Personal data</h3>
+			   				 <div class="prsnData ltr1Box">
+			   				 	<div class="fBox">
+			   				 		<div class="genSt fName">First name
+			   				 			<span class="reqPrs">*</span>
+			   				 			<div class="tooltipsPrs">
+			   				 				<span class="tooltiptext">Your first name</span>
+			   				 			</div>
+			   				 		</div>
+			   				 			
+								  	<div class="genSt lName">Last name
+								  		<span class="reqPrs">*</span>
+								  		<div class="tooltipsPrs">
+								  			<span class="tooltiptext">Your second name</span>
+								  		</div>
+								  	</div>
+								  	<div class="genSt PrsnCode">Personal ID-code
+							  			<span class="reqPrs">*</span>
+							  			<div class="tooltipsPrs">
+							  				<span class="tooltiptext">Your id-code</span>
+							  			</div>
+								  	</div>
+
+			   				 	</div>
+								<div class="sBox">
+									<input type="text" name="firstname" maxlength="55" required /><input type="text" name="lastname" maxlength="55" /><input type="text" name="personalcode" maxlength="11" required/>
+									<!-- without "[EE] " -->
+								</div>
+							</div>
+
+
+
+						</div>
+						<div class="steps" id="step-2">
+
+
+
+							<h3 class="Hrd3PrsnData">Contact info</h3>
+			   				 <div class="prsnData ltr1Box">
+			   				 	<div class="fBox">
+			   				 		
+								  	<div class="genSt EmlAddress">Email
+								  		<span class="reqPrs">*</span>
+								  		<div class="tooltipsPrs">
+								  			<span class="tooltiptext">Your email</span>
+								  		</div>
+								  	</div>
+								  	<div class="genSt TphNumber">Mobile Number
+								  		<span class="reqPrs">*</span>
+								  		<div class="tooltipsPrs">
+								  			<span class="tooltiptext">Your mobile number</span>
+								  		</div>
+								  	</div>
+			   				 	</div>
+								<div class="sBox">
+									<input type="email" name="emailaddress" maxlength="55" required /><input type="tel" maxlength="18" name="mobilenumber" value="[EE] +372 " required />
+								</div>
+							</div>
+
+
+
+
+						</div>
+						<div class="steps" id="step-3">
+
+
+
+							<h3 class="Hrd3PrsnData">Car data</h3>
+			   				 <div class="prsnData ltr1Box">
+			   				 	<div class="fBox">
+			   				 		<div class="genSt carMake">Car make
+			   				 			<span class="reqPrs">*</span>
+			   				 			<div class="tooltipsPrs">
+			   				 				<span class="tooltiptext">Select car make name</span>
+			   				 			</div>
+			   				 		</div>
+								  	<div class="genSt carPrc">Car price
+								  		<span class="reqPrs">*</span>
+								  		<div class="tooltipsPrs">
+								  			<span class="tooltiptext">Car price</span>
+								  		</div>
+								  	</div>
+			   				 	</div>
+								<div class="sBox">
+									<select class="slcCarMake" name="cars" required>
+								  		<option value="Choose make">Make</option>
+								    	<option value="tytCar">Toyota</option>
+								    	<option value="dtsnCar">Datsun</option>
+								    	<option value="lnciaCar">Lancia</option>
+								    	<option value="seatCar">Seat</option>
+								  	</select>
+								  		<input type="text" name="carprice" maxlength="6" required />									<!-- without "[EE] " -->
+								</div>
+							</div>
+
+
+
+
+						</div>
+
+						<div class="steps" id="step-4">
+
+
+
+							<h3 class="Hrd3PrsnData">Car leasing data</h3>
+			   				 <div class="prsnData ltr1Box">
+			   				 	<div class="fBox">
+			   				 		<div class="genSt dwnpyment">Downpayment
+			   				 			<span class="reqPrs">*</span>
+			   				 			<div class="tooltipsPrs">
+			   				 				<span class="tooltiptext">Your donwpayment</span>
+			   				 			</div>
+			   				 		</div>
+								  	<div class="genSt tpLeasing">Type of leasing
+								  		<span class="reqPrs">*</span>
+								  		<div class="tooltipsPrs">
+								  			<span class="tooltiptext">Select type of leasing</span>
+								  		</div>
+								  	</div>
+								  	<div class="genSt priod">Period
+								  		<span class="reqPrs">*</span>
+								  		<div class="tooltipsPrs">
+								  			<span class="tooltiptext">Select period</span>
+								  		</div>
+								  	</div>
+			   				 	</div>
+								<div class="sBox">
+								  		<input type="text" name="downpayment" value="10%" required maxlength="4" />
+									  <select class="slcTpLsng" name="typeLeasing" required>
+									  	<option value="Leasing">Type Leasing</option>
+									    <option value="Lease">Financial lease</option>
+									    <option value="LeaseWith">Financial lease with a residual value (only to bussiness clients)</option>
+									    <option value="opertLease">Operational lease</option>
+									  </select>							<!-- without "[EE] " -->
+									  <select class="periodPay" name="PeriodPay" required>
+								  	<option value="six months">6 months</option>
+								    <option value="twelve months">12 months</option>
+								    <option value="twenty-four months">24 months</option>
+								    <option value="thirty months">30 months</option>
+								    <option value="thirty-six months">36 months</option>
+								    <option value="forty-two months">42 months</option>
+								    <option value="forty-eight months" selected>48 months</option>
+								    <option value="fifty-four months">54 months</option>
+								    <option value="sixty months">60 months</option>
+								    <option value="sixty six months ">66 months</option>
+								    <option value="seventy-two  months">72 months</option>
+								    <option value="seventy-eight months">78 months</option>
+								    <option value="eighty-four months">84 months</option>
+								  </select>
+								</div>
+							</div>
+
+
+
+
+						</div>
+
+						<div class="steps" id="step-5">
+
+
+
+							<h2>Car insurance</h2>
+
+							<p class="textboxInsurance">Our Bank offers all-risk insurance to its clients. All-risk insurance covers <strong> damage caused by any sudden unforeseen event </strong>(e.g. a fire, traffic accident, vandalism, natural disaster, theft and robbery) that damages or destroys the insured item. Events listed among the exceptions are not considered to be insured events.</p>
+
+							<div class="radioCrLsData">
+
+
+									
+									 <label class="container">Your prefer the our offers<input id="ourIncTextarea" type="radio" name="typeCarLeasing" value="Our offers"  checked required />
+									 	<span class="checkmark"></span>
+									 </label>
+									 <label class="container">In other insurance company<input id="othIncTextarea" type="radio" name="typeCarLeasing" value="Other company offers" required />
+									 	<span class="checkmark"></span>
+									 </label>
+									 <label class="container">Other<input id="actTextarea" type="radio" name="typeCarLeasing" value="Other insurance" required />
+									 	<span class="checkmark"></span>
+									 </label>
+									 
+									
+							</div>
+							<textarea class="txtar" id="textAR">asd</textarea>
+
+						<h2>Terms and Conditions</h2>	 
+		 			
+			 			<div class="chckBoxCrLsData">
+			 					  <label class="container">Send confirmation email<input type="checkbox" name="confirmInfo" value="Email confirming" required />
+								  	<span class="checkmark"></span>
+								  </label>
+								  <label class="container">By confirming , I agree to The Bank Terms and Conditions.<input  type="checkbox" name="confirmInfo" value="Terms and Conditions agree" required />
+								  	<span class="checkmark"></span>
+								  </label>
+								  <label class="container">By clicking the „Send“ button, you confirm that you agree to the use of cookies.<input  type="checkbox" name="confirmInfo" value="Cookies processing" required />
+								  	<span class="checkmark"></span>
+								  </label>
+						</div>
+
+						<hr class="hrLinesubRes" />
+						<div class="subResBtns">
+						  <input class="submitBtn" type="submit" name="Submit" />
+						</div>
+
+
+
+
+						</div>
+
+
+						
+							 
+
+
+
+ 							
+							</div><button id="prev-step" class="genBtnStyle" type="button">PREV</button>
+ 							 <button id="next-step" class="genBtnStyle" type="button">NEXT</button>
+						</div>
+					</div>
+				</div>
+		  	</div>
+		  	
+		  	
+	  	</form>
+		<div class="footer">
+				<div class="containerFtr">
+					<table>
+						<tbody class="tbFtr">
+							<tr>
+								<td><h3 class="hrdTbFt">Contacts</h3></td>
+								<td class="telHg">6 310 310</td>
+								<td><a class="emailTdFt" href="#">info@swedbank.ee</a></td>
+								<td><a class="gnrlClraFtr" href="#">Bank official contact</a></td>
+								<td><a class="gnrlClraFtr" href="#">Branches and ATMs</a></td>
+							</tr>
+							<tr>
+								<td><h3  class="hrdTbFt">Useful links</h3></td>
+								<td><a class="gnrlClraFtr" href="#">Calculators</a></td>
+								<td><a class="gnrlClraFtr" href="#">Prices and rates</a></td>
+								<td><a class="gnrlClraFtr" href="#">Bank conditions</a></td>
+								<td><a class="gnrlClraFtr" href="#">Processing of Client Data</a></td>		
+							</tr>
+							<tr>
+								<td><h3  class="hrdTbFt">Come to us</h3></td>
+								<td><a class="gnrlClraFtr" href="#">Customer programme</a></td>
+								<td><a class="gnrlClraFtr" href="#">For new customers</a></td>
+								<td><a class="gnrlClraFtr" href="#">Work with us</a></td>
+								<td><a class="gnrlClraFtr" href="#">Become corporate client</a></td>
+								<td><a class="gnrlClraFtr" href="#">Traineeship</a></td>
+							</tr>
+							<tr>
+								<td><h3  class="hrdTbFt">Products</h3></td>
+								<td><a class="gnrlClraFtr" href="#">Debit cards</a></td>
+								<td><a class="gnrlClraFtr" href="#">E-invoices and standing orders</a></td>
+								<td><a class="gnrlClraFtr" href="#">Stocks</a></td>
+								<td><a class="gnrlClraFtr" href="#">Deposits</a></td>
+								<td><a class="gnrlClraFtr" href="#">Casco insurance and traffic insurance</a></td>
+								<td><a class="gnrlClraFtr" href="#">Travel insurance</a></td>
+								<td><a class="gnrlClraFtr" href="#">Credit cards</a></td>
+								<td><a class="gnrlClraFtr" href="#">Home loans</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			<div class="stubBg"></div>
+	  	</div>
+  </div>
+
+
+
+<script type="text/javascript">
+
+function goToPrevStep() {
+  var activeStepEl = document.querySelector(".active-step");
+  var prevStepEl = activeStepEl.previousElementSibling;
+ 
+  if (prevStepEl) {
+    activeStepEl.classList.remove("active-step");
+    prevStepEl.classList.add("active-step");
+  }
+}
+
+function goToNextStep() {
+  var activeStepEl = document.querySelector(".active-step");
+  var nextStepEl = activeStepEl.nextElementSibling;
+ 
+  if (nextStepEl) {
+    activeStepEl.classList.remove("active-step");
+    nextStepEl.classList.add("active-step");
+
+  }
+}
+
+var prevButton = document.getElementById("prev-step");
+var nextButton = document.getElementById("next-step");
+
+prevButton.addEventListener("click", goToPrevStep);
+nextButton.addEventListener("click", goToNextStep);
+
+
+
+var btnTxtAr = document.getElementById("actTextarea");
+var clsOneTxtAr = document.getElementById("ourIncTextarea");
+var clsTwoTxtAr = document.getElementById("othIncTextarea");
+
+btnTxtAr.addEventListener("click", openTextAr);
+clsOneTxtAr.addEventListener("click", closeOneTextAr);
+clsTwoTxtAr.addEventListener("click", closeTwoTextAr);
+
+function openTextAr(){
+	document.getElementById("textAR").style.display = "block";
+}
+function closeOneTextAr(){
+	document.getElementById("textAR").style.display = "none";
+}
+function closeTwoTextAr(){
+	document.getElementById("textAR").style.display = "none";
+}
+
+
+document.getElementById("textAR").style.display= "none";
+
+
+
+// if(nextButton == "active-step"){
+// 	document.getElementById
+
+// }
+// document.getElementById("prev-step").style.display = "none";
+
+</script>
+
+
+
+</body>
+
+</html>

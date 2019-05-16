@@ -1,0 +1,833 @@
+/* by Stanislav Udatsnoi */
+
+/*
+				Info:
+
+				Images – All Images was taken from free photostock/photobanks;
+				Icons – Icons i created by myself;
+
+*/
+
+
+html, body, .wrapper{
+	background-color:#FBAB32;
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+/*.wrapper{
+	display: block;
+	background-color: white;
+}*/
+
+
+
+/*@media screen and (max-width: 1440px) {*/
+
+	.wrapper{
+		width: 100%;
+	}
+	
+	
+	/* HEADER */
+
+	.header{
+		display: block;
+		background-color: white;
+		width: 100%;
+	}
+
+	.containerHrd{
+		width: 1260px;
+		display: block;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	.fLine{
+		height: 60px;
+	}
+	.sLine{
+		height: 60px;
+	}
+	
+	.fLine{
+		margin: 10px 0 0 0;
+		padding: 0;
+		background-color: white;
+		width: 100%;
+	}
+
+	.lBoxBg{
+		margin: 0 0 0 0;
+		padding: 0;
+		background-color: white;
+		width: 50%;
+		display: block;
+		float: left;
+
+	}
+
+	.rBoxBg{
+		margin: 0 0 0 0;
+		padding: 0;
+		background-color: white;
+		width: 50%;
+		display: block;
+		float: right;
+	}
+
+	/*Logo*/
+	.lBoxBg img{
+		margin: 5px 0 0 10px;
+		padding: 0;
+		width: 170px;
+	}
+	.logoSwd{
+		width: 130px;
+	}
+
+	.lBoxBg a{
+		display: inline-block;
+		cursor: pointer;
+		float: left;
+	}
+
+	.PrBsSclt, .langSclt{
+		float: left;
+		padding: 14px 10px 12px 10px;
+		border-radius: 4px;
+		border: 0;
+		font: inherit;
+		display: inline-block;
+		cursor: pointer;
+		margin: 10px 0 0 0;
+
+		/* reset */
+
+		 -webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+		 box-sizing: border-box;
+		 -webkit-appearance: none;
+		 -moz-appearance: none;
+
+	}
+	.langSclt:hover, .PrBsSclt:hover{
+		-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+		-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+		box-shadow: 0px 0px 0px 0px rgba(0,0,0,1); 
+	}
+	.rBoxBg .langSclt, .lBoxBg .PrBsSclt {
+	  background-image:
+	    linear-gradient(45deg, transparent 50%, orange 50%),
+	    linear-gradient(135deg, orange 50%, transparent 50%),
+	    linear-gradient(to right, #ffffff, #ffffff);
+	  background-position:
+	    calc(100% - 5px) calc(1.1em + 2px),
+	    calc(100% - 0px) calc(1.1em + 2px),
+	    100% 0;
+	  background-size:
+	    5px 5px,
+	    5px 5px,
+	    2.0em 2.8em;
+	  background-repeat: no-repeat;
+	}
+
+
+	.icon_mobile{
+		background-image: url(../img/icons/mobile-icon.png);
+		background-repeat: no-repeat;
+		background-size: 23px 23px;
+		width: 35px;
+		height: 35px;
+		display: block;
+		float: right;
+		margin: 17px 13px 0 0;
+	}
+	.icon_letter{
+		background-image: url(../img/icons/letter-icon.png);
+		background-repeat: no-repeat;
+		background-size: 23px 23px;
+		width: 35px;
+		height: 35px;
+		display: block;
+		float: right;
+		margin: 18px 0 0 0;
+	}
+	.icon_mobile:hover{
+		background-image: url(../img/icons/mobile-hover-icon.png);
+	}
+	
+	.icon_letter:hover{
+		background-image: url(../img/icons/letter-hover-icon.png);
+	}
+	.langSclt{
+		float: right;
+		margin: 7px 0 0 0;
+		line-height: 20px;
+		font-weight: 400;
+
+	}
+	/*.enterAcc:after{
+		background-image: url(../img/icons/enter-icon.png);
+		background-repeat: no-repeat;
+		background-size: 28px 28px;
+		width: 35px;
+		height: 35px;
+		display: block;
+		float: left;
+		position: relative;
+		right: 70px;
+		top: -8px;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+	    content: " ";
+	}	
+	.enterAcc:hover:after{
+		background-image: url(../img/icons/enter-hover-icon.png);
+	}*/
+	.enterAcc{
+		float: right;
+		margin: 6px 25px 0 55px;
+		padding: 7px 0 0 0;
+		display: block;
+		font-weight: 400;
+		text-decoration: none;
+	}
+	.enterAcc span{
+		background-image: url(../img/icons/enter-icon.png);
+		background-repeat: no-repeat;
+		background-size: 28px 28px;
+		width: 35px;
+		height: 35px;
+		display: block;
+		margin: 0;
+		padding: 0;
+		float: left;
+	}
+	.enterAcc span:hover{
+		background-image: url(../img/icons/enter-hover-icon.png);
+		background-repeat: no-repeat;
+	}
+	.enterAcc p{
+		margin: 0 0 0 0;
+		padding: 9px 0 0 0;
+		display: block;
+		float: left;
+
+	}
+
+	/*fix border-top*/
+	.fxsLine{
+		margin: 0;
+		padding: 0;
+		border-top: 1px solid #eee;
+		display: block;
+		left: 0;
+		right:0;
+		position: absolute;
+	}
+	/*.sline ul a:first-child{
+		width: 50px;
+	}*/
+	.sLine ul{
+		list-style: none;
+		margin: 0 auto;
+		padding: 0;
+		max-width: 1440px;
+
+	}
+	.sLine ul li{
+		margin: 90;
+		border-bottom: 1px solid #eee;
+		border-right: 1px solid #eee;
+		border-left: 1px solid #eee;
+		float: left;
+		display: block;
+	}
+	.sLine ul li .menLinksLine{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 165px;
+		height: 56px;
+		text-align: center;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 15px;
+		color: #512b2b;
+		padding: 3px 10px 0 10px;
+	}
+	.menLinksLine span{
+		color: #f35b1c;
+	}
+	.sLine .icon_home, .sLine .icon_search{
+		max-width: 50px;
+	}
+	.sLine .icon_home{
+		background-image: url(../img/icons/home-icon.png);
+		background-repeat: no-repeat;
+		background-size: 23px 23px;
+		width: 35px;
+		height: 35px;
+		margin: 20px 10px 0 20px;
+		padding: 4px 0 0 0;
+		float: left;
+	}
+	.sLine .icon_search{
+		background-image: url(../img/icons/search-icon.png);
+		background-repeat: no-repeat;
+		background-size: 28px 28px;
+		width: 35px;
+		height: 35px;
+		margin: 18px 10px 2px 17px;
+		padding: 4px 0 0 0;
+		float: left;
+	}
+	.sLine .icon_home:hover{
+		background-image: url(../img/icons/home-hover-icon.png);
+	}
+	
+	.sLine .icon_search:hover{
+		background-image: url(../img/icons/search-hover-icon.png);
+	}
+	
+	.headerUnd{
+		display: block;
+/*		background-color: #982222;*/
+		width: 100%;	
+		height: 40px;
+	}
+
+	.breadcrumbs{
+		background-image: url(../img/bg-breadcrumbs.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 100%;
+		height: 100%;
+	}
+	/* Stub */
+	.breadcrumbs p{
+		margin: 0 auto;
+		padding: 13px 0 0 80px;
+		font-size: 12px;
+		color: white;
+		width: 1260px;
+		display: block;
+
+	}
+
+	/* TOOLTIPLS */
+	.tooltipsPrs{
+		background-image: url(../img/icons/qMark-icon.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 20px;
+		height: 20px;
+		margin: -3px 0 0 0;
+	}
+	.tooltipsPrs:hover{
+		background-image: url(../img/icons/qMark-hover-icon.png);
+	}
+	.tooltipsPrs:active{
+		background-image: url(../img/icons/xMark-icon.png);
+	}
+	.tooltipsPrs p{
+		visibility: hidden;
+	    width: 120px;
+	    background-color: #555;
+	    color: #fff;
+	    text-align: center;
+	    border-radius: 6px;
+	    padding: 5px 0;
+	    position: absolute;
+	    z-index: 1;
+	    bottom: 125%;
+	    left: 50%;
+	    margin-left: -60px;
+	    opacity: 0;
+	    transition: opacity 0.3s;
+	}
+
+	.tooltipsPrs p::after{
+		content: "";
+	    position: absolute;
+	    top: 100%;
+	    left: 50%;
+	    margin-left: -5px;
+	    border-width: 5px;
+	    border-style: solid;
+	    border-color: #555 transparent transparent transparent;
+	}
+	.tooltipsPrs:active p {
+	    visibility: visible;
+	    opacity: 1;
+	}
+	/*.tltpsContainer
+	.tpsContent
+	p*/
+	.tltpsContainer, .tpsContent, .tpsContent p{
+		display: none;
+		margin: 0;
+		padding: 0;
+	}
+
+
+
+
+	/* MAIN PAGE WITH FORM */
+
+	.pageMain{
+		background-color: #FBF2EA;/*FBF2EA*/
+		display: block;
+		margin: 0;
+		padding: 30px 0 30px 0;
+	}
+	.pageMain .pageContainer{
+		width: 1440px;
+		margin: 0 auto 0 auto;
+		background: #FBF2EA;
+	}
+
+	.mainForm{
+		background-color: #F4FBFD;
+		width: 600px;
+		margin: 0 auto;
+		padding: 20px;
+		display: block;
+		border: 20px solid white;
+	}
+	.mainForm h2, h3{
+		color: #512b2b; 
+	
+	}
+	.mainForm .reqPrs{
+		color: #c15d54;
+		padding: 0 2px 0 2px;
+		margin: 0;
+		padding: 0;
+		float: left;
+	}
+	.prsnData, .carLsngData{
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		/*height: 280px;*/
+	}
+	/*PERSONAL DATA BOX*/
+	.fBox{
+		width: 38%;
+		margin: 0;
+		padding: 0;
+		float:left;
+	}
+	.sBox{
+		width: 62%;
+		margin: 0;
+		padding: 0;
+		float:right;
+	}
+	
+	.genSt{
+		text-align: right;
+		margin: 0;
+		padding: 2px 15px 5px 0px;
+		height: 47px;/* 15%=280px(prsnData)*/
+		justify-content: right;
+		align-items: center;
+		display: flex;
+		font-size: 15px;
+		color: #a58e8d;
+
+	}
+	.sBox input, .sBox select{
+		display: block;
+		width: 200px;
+		padding: 14px 10px 12px 10px;
+		border-radius: 5px;
+		border: 1px solid #bcd8db;
+		border-color: #8acdc3;
+		font-size: 15px;
+	}
+	.sBox input:hover, select:hover{
+		-webkit-box-shadow: 0px 0px 1px 1px rgba(255,255,0,1);
+		-moz-box-shadow: 0px 0px 1px 1px rgba(255,255,0,1);
+		box-shadow: 0px 0px 1px 1px rgba(255,255,0,1);  	
+	}
+
+	.fBox p:not(:first-child), .sBox input:not(:first-child){
+		margin: 10px 0 0  0;
+	}
+
+	/*CAR LEASING DATA BOX*/
+
+	.sBox select{
+		display: block;
+		padding: 14px 10px 12px 10px;
+		border-radius: 4px;
+		border: 1px solid #bcd8db;
+		border-color: #8acdc3;
+		width: 223px;
+		background-color: #ebf8f2;
+		font: inherit;
+		display: inline-block;
+
+
+		/* reset */
+
+		 -webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+		 box-sizing: border-box;
+		 -webkit-appearance: none;
+		 -moz-appearance: none;
+	}
+/*	 select{
+	  background-color: white;
+	  border: thin solid blue;
+	  border-radius: 4px;
+	  font: inherit;
+	  line-height: 1.5em;
+	  padding: 0.5em 3.5em 0.5em 1em;
+
+	  
+	}*/
+	.sBox select.slcCarMake, .sBox select.slcTpLsng, .sBox select.periodPay{
+	  background-image:
+	    linear-gradient(45deg, transparent 50%, black 50%),
+	    linear-gradient(135deg, black 50%, transparent 50%),
+	    linear-gradient(to right, #ebf8f2, #ebf8f2);
+	  background-position:
+	    calc(100% - 20px) calc(1em + 2px),
+	    calc(100% - 15px) calc(1em + 2px),
+	    100% 0;
+	  background-size:
+	    5px 5px,
+	    5px 5px,
+	    2.0em 2.8em;
+	  background-repeat: no-repeat;
+	}
+	.slcTpLsng, .periodPay{
+		margin: 10px 0 0 0;
+	}
+
+	.radioCrLsData{
+		margin: 0;
+		padding: 10px 0 0 0;
+		height: 40px;
+
+	}
+	.radioCrLsData label{
+		margin: 0 15px 0 0;
+	}
+	.radioCrLsData .container{
+		
+	    position: relative;
+	    cursor: pointer;
+	    font-size: 15px;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	    padding: 7px 0 0 35px;
+	}
+	.radioCrLsData .container input {
+	    position: absolute;
+	    opacity: 0;
+	    cursor: pointer;
+	    height: 0;
+	    width: 0;
+	    border: 1px solid #bcd8db;
+	}
+	.radioCrLsData .checkmark {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    height: 26px;
+	    width: 26px;
+	    background-color: #fff;
+	    border-radius: 30px;
+	}
+	/* Create the checkmark/indicator (hidden when not checked) */
+	.radioCrLsData .checkmark:after {
+	    content: "";
+	    position: absolute;
+	    display: none;
+	}
+	/* On mouse-over, add a grey background color */
+	.radioCrLsData .container:hover input ~ .checkmark  {
+	    background-color: #f35b1c;
+	    border: 1px solid yellow;
+	}
+	/* When the checkbox is checked, add a blue background */
+	.radioCrLsData .container input:checked ~ .checkmark {
+	    background-color: #f35b1c;
+	    border-radius: 30px;
+	    border: 1px solid #F4FBFD;
+	}
+	/* Show the checkmark when checked */
+	.radioCrLsData .container input:checked ~ .checkmark:after {
+	    display: block;
+	}
+	/* Show the checkmark when checked */
+	.radioCrLsData .container input ~ .checkmark:after {
+	    display: block;
+	}
+	/* Style the checkmark/indicator */
+	.radioCrLsData .container .checkmark:after {
+	    left: 3px;
+	    top: 3px;
+	    width: 14px;
+	    height: 14px;
+	    border: solid white;
+	    border-radius: 20px;
+	    border-width: 3px;
+	}
+	
+
+	/*Insurance*/
+
+
+	.textboxInsurance{
+		font-size: 15px;
+		color: #512b2b;
+	}
+
+	/*Email & Terms and Condition*/
+	.chckBoxCrLsData{
+		margin: 0;
+		padding: 10px 0 0 0;
+		width: 100%;
+		display: block;
+		height: 95px;
+	}
+	.chckBoxCrLsData label:not(:first-child){
+		margin: 10px 0 0 0;
+		float: left;
+	}
+	.chckBoxCrLsData .container{
+		
+	    position: relative;
+	    /*margin-bottom: 12px;*/
+	    cursor: pointer;
+	    font-size: 15px;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	    padding: 7px 0 0 35px;
+	    margin: 0 0 0 0;
+	    display: block;
+	}
+	.chckBoxCrLsData .container input {
+	    position: absolute;
+	    opacity: 0;
+	    cursor: pointer;
+	    height: 0;
+	    width: 0;
+	}
+	.chckBoxCrLsData .checkmark {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    height: 25px;
+	    width: 25px;
+	    background-color: #fff;
+	   	border: 1px solid #bcd8db;
+
+	}
+	/* Create the checkmark/indicator (hidden when not checked) */
+	.chckBoxCrLsData .checkmark:after {
+	    content: "";
+	    position: absolute;
+	    display: none;
+	}
+	/* On mouse-over, add a grey background color */
+	.chckBoxCrLsData .container:hover input ~ .checkmark {
+	    background-color: #f35b1c;
+	}
+
+	/* When the checkbox is checked, add a blue background */
+	.chckBoxCrLsData .container input:checked ~ .checkmark {
+	    background-color: #f35b1c;
+	}
+
+	/* Show the checkmark when checked */
+	.chckBoxCrLsData .container input:checked ~ .checkmark:after {
+	    display: block;
+	}
+	/* Show the checkmark when checked */
+	.chckBoxCrLsData .container input ~ .checkmark:after {
+	    display: block;
+	}
+	/* Style the checkmark/indicator */
+	.chckBoxCrLsData .container .checkmark:after {
+	    left: 9px;
+	    top: 5px;
+	    width: 5px;
+	    height: 10px;
+	    border: 1px solid white;
+	    border-width: 0 3px 3px 0;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+
+	/*  Submit and Rest Buttons */
+
+	.mainForm .hrLinesubRes{
+		margin: 20px 0;
+		border: 1px solid #ddd;
+		display: block;
+	}
+	.subResBtns{
+		display: block;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+	}
+
+	.submitBtn, .resetBtn{
+		padding: 10px;
+		background-color: #f35b1c;
+		color: #ffffff;
+		border-radius: 2px;
+		-webkit-box-shadow: 0;
+		-moz-box-shadow: 0;
+		box-shadow: 0;
+		border: none;
+		font-size: 18px;
+	}
+
+
+	/*  Footer */
+
+
+	.footer{
+		margin: 0 0 0 0;
+		padding: 0
+	}
+	.footer .containerFtr{
+		background-color: #EBE7E3;
+		height: 350px;
+	}
+	.containerFtr table{
+		margin: 0 auto;
+	}
+	.containerFtr tr{
+		float: left;
+		width: 280px;
+		padding: 20px;
+		margin: 0 0 0 20px;
+
+	}
+	.containerFtr td{
+		display: block;
+		margin: 10px 0 10px 7px;
+
+	}
+	.containerFtr td .gnrlClraFtr{
+		text-decoration: none;
+		font-size: 15px;
+		color: black;
+		text-decoration: none;
+	}
+	.containerFtr .telHg{
+		color: #f35b1c;
+		font-size: 36px;
+		font-weight: 700;
+	}
+	.hrdTbFt{
+		color: #512b2b;
+		font-weight: 700; 
+	}
+	.emailTdFt{
+		color: #257886;
+	}
+	.stubBg{
+		background-color: #ffffff;
+		height: 33px;
+	}
+
+	.prsnData.ltr1Box /* <-- если два класса, то класс пишется вместе*/{
+	}
+	.genBtnStyle{
+		padding: 10px;
+		background-color: #f35b1c;
+		color: #ffffff;
+		border-radius: 2px;
+		-webkit-box-shadow: 0;
+		-moz-box-shadow: 0;
+		box-shadow: 0;
+		border: none;
+		font-size: 18px;
+		margin: 50px 0 0 0;
+	}
+	.prsnData.ltr1Box{
+		/*height: 200px;
+		min-height: 200px
+		max-height: 100%;
+
+*/
+
+	}
+
+
+
+	.tooltipsPrs {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    float: left;
+	}
+
+	.tooltipsPrs .tooltiptext {
+	    visibility: hidden;
+	    width: 120px;
+	    background-color: #555;
+	    color: #fff;
+	    text-align: center;
+	    border-radius: 6px;
+	    padding: 5px 0;
+	    position: absolute;
+	    z-index: 1;
+	    bottom: 125%;
+	    left: 50%;
+	    margin-left: -60px;
+	    opacity: 0;
+	    transition: opacity 0.3s;
+	}
+
+	.tooltipsPrs .tooltiptext::after {
+	    content: "";
+	    position: absolute;
+	    top: 100%;
+	    left: 50%;
+	    margin-left: -5px;
+	    border-width: 5px;
+	    border-style: solid;
+	    border-color: #555 transparent transparent transparent;
+	}
+
+	.tooltipsPrs:hover .tooltiptext {
+	    visibility: visible;
+	    opacity: 1;
+	}
+
+
+
+
+
+		.steps {
+	  display: none;
+	  height: 100%;
+	}
+
+	.active-step {
+	  display: block;
+	}
+
+	
+	.txtar{
+		padding: 10px 0 0 10px;
+		border: 1px solid #bcd8db;
+		width: 590px;
+	}
